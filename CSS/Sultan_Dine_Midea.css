@@ -1,0 +1,508 @@
+/* Default: Hide menu icon on large screens */
+.menu-icon {
+    display: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #A45C40;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        z-index: 2000;
+    }
+
+    /* Initially hide full header */
+    #navbar, .searchbar, .nxt, .next, .car {
+        display: none;
+    }
+
+    /* Initially hide panel */
+    .panel {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: #A45C40;
+        padding: 20px;
+        z-index: 1000;
+    }
+}
+/* Default Styles (Mobile First Approach) */
+body {
+    font-size: 14px;
+}
+
+/* Responsive for Tablets (Screens 768px and above) */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .menu-button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .panel {
+        width: 300px;
+    }
+
+    .panel a {
+        font-size: 20px;
+    }
+
+    .service-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-option {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+/* Responsive for Laptops and Desktops (Screens 1024px and above) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .menu-button {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+
+    .panel {
+        width: 350px;
+    }
+
+    .panel a {
+        font-size: 22px;
+    }
+
+    .service-options {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .service-option {
+        width: 30%;
+    }
+}
+
+/* Hide Panel Sections and Header Content in Mobile */
+@media (max-width: 768px) {
+    #navbar, .searchbar, .nxt, .next, .car {
+        display: none;
+    }
+
+    .panel {
+        width: 50%;
+        height: 70%;
+        background-color: #d8a7b1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .panel a {
+        font-size: 20px;
+        padding: 15px;
+        display: block;
+    }
+
+    /* Video Section Responsive */
+    .covimg video {
+        width: 100%;
+        height: auto;
+    }
+    .overlay-text {
+        font-size: 22px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Image Gallery */
+    .image-gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Services Responsive */
+    .service-options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-option {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    /* Video Blogs Responsive */
+    .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video {
+        width: 45%;
+        margin: 5px;
+    }
+
+    .video img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Branches Responsive */
+    .branches-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .branch-card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    /* Footer Responsive */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .hotline h2 {
+        font-size: 20px;
+    }
+}
+@media (min-width: 769px) {
+    .panel {
+        display: flex !important; /* Ensure it stays visible and aligns properly */
+        position: fixed !important; /* Keep it fixed at the top */
+        width: 100% !important; /* Full width of the screen */
+        height: 50px !important; /* Fix the height for the panel */
+        background-color: #e4b7a0 !important; /* Set the background color */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important; /* Add some shadow for depth */
+        padding: 0 20px !important; /* Keep original padding */
+        z-index: 999 !important; /* Ensure it stays above other elements */
+        justify-content: space-evenly !important; /* Space the items evenly */
+        align-items: center !important; /* Vertically center the content */
+    }
+
+    .menu-button {
+        display: block !important; /* Ensure the button is displayed */
+        background-color: #ea3160 !important; /* Button color */
+        color: white !important; /* Text color for the button */
+        padding: 10px 20px !important; /* Padding inside the button */
+        border: none !important;
+        font-size: 14px !important; /* Font size for the button */
+        cursor: pointer !important;
+    }
+
+    .overlay-text {
+        display: block !important; /* Show the overlay text */
+    }
+}
+/* Mobile Devices (up to 767px) - Ultra Compact Version */
+@media (max-width: 767px) {
+    .contact-section {
+        padding: 10px 0; /* Minimal padding */
+    }
+
+    .contact-container {
+        gap: 10px; /* Minimal gap between sections */
+    }
+
+    .contact-info, .contact-form {
+        padding: 12px; /* Very compact padding */
+        margin: 0 5px; /* Tiny side margins */
+    }
+
+    .contact-info h2, .contact-form h2 {
+        font-size: 1.2rem; /* Small heading */
+        margin-bottom: 8px; /* Tight spacing */
+    }
+
+    .contact-info p {
+        font-size: 12px; /* Very small text */
+        line-height: 1.3; /* Tight line spacing */
+        margin-bottom: 6px; /* Minimal spacing */
+    }
+
+    .input-group {
+        margin-bottom: 8px; /* Tiny spacing between inputs */
+    }
+
+    .input-group input {
+        padding: 6px 8px; /* Minimal padding */
+        font-size: 12px; /* Small text */
+        height: 32px; /* Short input fields */
+    }
+
+    .btn-submit {
+        padding: 6px 12px; /* Tiny button */
+        font-size: 12px; /* Small text */
+        height: 32px; /* Short button */
+        margin-top: 5px; /* Minimal top margin */
+    }
+
+    .support-hours p {
+        font-size: 11px; /* Very small text */
+        margin-bottom: 4px; /* Ultra compact */
+    }
+
+    .map-container iframe {
+        height: 180px; /* Compact map */
+    }
+
+    .map-container h2 button {
+        padding: 4px 8px; /* Tiny button */
+        font-size: 12px; /* Small text */
+    }
+}
+
+/* Small Mobile Devices (up to 480px) - Even More Compact */
+@media (max-width: 480px) {
+    .contact-info, .contact-form {
+        padding: 8px; /* Super tight padding */
+    }
+
+    .input-group input {
+        padding: 4px 6px; /* Ultra compact */
+        height: 28px; /* Very short inputs */
+    }
+
+    .btn-submit {
+        padding: 4px 8px;
+        height: 28px;
+    }
+
+    .map-container iframe {
+        height: 150px; /* Very small map */
+    }
+}
+@media (max-width: 1024px) {
+    .history-box, .team-box {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member {
+        width: 45%;
+        margin: 10px;
+        text-align: center;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #f6eee0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .history-box, .team-box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .history-box, .team-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .team-member {
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    .about-card {
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    .image-container img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .info-table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .image-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .info-table th, .info-table td {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-card {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-card p {
+        font-size: 1rem;
+    }
+    .image-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .info-table th, .info-table td {
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .review-form {
+        width: 80%;
+        margin: auto;
+    }
+
+    .review-form textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .review-form button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        background-color: #ea3160;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .review-form {
+        width: 90%;
+    }
+
+    .review-form textarea {
+        height: 120px;
+        font-size: 14px;
+    }
+
+    .review-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-form {
+        width: 95%;
+    }
+
+    .review-form textarea {
+        height: 100px;
+        font-size: 12px;
+    }
+
+    .review-form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+.compact-slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto; /* Centers the slider */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 5px; /* Optional rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow */
+    margin-top: 100px;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill container */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider-container img.active {
+    opacity: 1;
+}
