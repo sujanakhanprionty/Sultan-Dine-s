@@ -21,7 +21,8 @@ Desktop 💻
 Tablet 📱
 Mobile 📲
 🌐 Live Preview
-🔗 https://sujanakhanprionty.github.io/Sultan-Dine-s/
+🔗 https:[//sujanakhanprionty.github.io/Sultan-Dine-s/](https://sujanakhanprionty.github.io/Deployment_Sultan-Dine/)
+
 
 📧 Contact
 Student: Sujana Khan Prionty
